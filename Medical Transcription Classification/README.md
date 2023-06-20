@@ -1,0 +1,11 @@
+In the proposed model, DistilBERT was utilized for classifying medical specialties based on medical transcription text. DistilBERT has emerged as a viable alternative to the original BERT model, particularly for handling medical text.
+
+DistilBERT, a distilled version of BERT, offers comparable performance to BERT but with reduced complexity. While the conventional BERT model contains 110 million parameters, DistilBERT achieves similar results with fewer parameters. This reduction in complexity makes DistilBERT computationally more efficient and faster to train, which is advantageous, especially when dealing with limited computational resources.
+
+The DistilBERT model leverages a transformer architecture, which allows it to capture contextual information from the input text effectively. By utilizing self-attention mechanisms, DistilBERT can understand the relationships and dependencies between words in a sentence, leading to a deeper understanding of the text.
+
+Furthermore, recent studies have demonstrated the effectiveness of DistilBERT for various NLP tasks in the medical domain. For example, Abadeer (2020) evaluated DistilBERT's performance for Named Entity Recognition (NER) in medical records and found that it achieved nearly identical results to the medical versions of BERT in terms of F1-score. This suggests that DistilBERT can provide excellent results, similar to BERT, but with reduced complexity and computational requirements.
+
+However, it's important to note that DistilBERT, similar to BERT, has a maximum token length limitation, typically set to 512 tokens. This limitation can be challenging when dealing with long sequences, such as medical transcriptions. In such cases, token splitting, truncation, and padding may be necessary to fit the input within the token limit, potentially resulting in sparse embeddings or loss of some information at the sequence ends.
+
+In summary, DistilBERT offers a more computationally efficient and faster alternative to the original BERT model for NLP tasks, including medical text classification. It provides comparable performance while reducing complexity, making it an attractive choice, especially in scenarios with limited computational resources.
